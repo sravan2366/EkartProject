@@ -1,0 +1,62 @@
+package com.app.dto;
+
+import java.util.List;
+import com.app.entity.Prices;
+
+public class ProductsDto {
+
+	private int id;
+	private String name;
+	private String shortDesc;
+	private String description;
+	private String category;
+	
+//    public ProductsDto(int id, String name, String shortDesc, String description, String category,
+//			List<Prices> pricesDetails) {
+//		super();
+//		this.id = id;
+//		this.name = name;
+//		this.shortDesc = shortDesc;
+//		this.description = description;
+//		this.category = category;
+//		this.pricesDetails = pricesDetails;
+//	}
+	private List<Prices> pricesDetails;
+    
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getShortDesc() {
+		return shortDesc;
+	}
+	public void setShortDesc(String shortDesc) {
+		this.shortDesc = shortDesc;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public List<Prices> getPricesDetails() {
+		return pricesDetails;
+	}
+	public void setPricesDetails(List<Prices> pricesDetails) {
+		this.pricesDetails = pricesDetails;
+	}
+}
